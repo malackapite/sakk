@@ -1,5 +1,5 @@
 from kiir import kiir
-import melyikFigura
+from melyikFigura import melyikFigura
 
 tabla = [["br", "bh", "bb", "bq", "bk", "bb", "bh", "br"],
          ["bp", "bp", "bp", "bp", "bp", "bp", "bp", "bp"],
@@ -9,11 +9,11 @@ tabla = [["br", "bh", "bb", "bq", "bk", "bb", "bh", "br"],
          ["  ", "  ", "  ", "  ", "  ", "  ", "  ", "  "],
          ["wp", "wp", "wp", "wp", "wp", "wp", "wp", "wp"],
          ["wr", "wh", "wb", "wq", "wk", "wb", "wh", "wr"]]
-jatekVege = 0
+
 
 kiir(tabla)
-while not jatekVege:
+while True:
     honnan = str(input("Melyik figura (sor/oszlop): "))
     hova = str(input("Hova lépjen: "))
-    melyikFigura.melyikFigura(tabla, honnan, hova)
+    melyikFigura(tabla, honnan, hova)
     kiir(tabla)
