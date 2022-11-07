@@ -7,15 +7,17 @@ from kiralyno import kiralyno
 
 
 def melyikFigura(tabla, honnan, hova):
-    if tabla[int(honnan[0]) - 1][int(honnan[1]) - 1][1] == "p":
+    figura = tabla[int(honnan[0]) - 1][int(honnan[1]) - 1][1]
+
+    if figura == "p":
         gyalog(tabla, honnan, hova)
-    elif tabla[int(honnan[0]) - 1][int(honnan[1]) - 1][1] == "h":
+    elif figura == "h":
         huszar(tabla, honnan, hova)
-    elif tabla[int(honnan[0]) - 1][int(honnan[1]) - 1][1] == "r":
+    elif figura == "r":
         bastya(tabla, honnan, hova)
-    elif tabla[int(honnan[0]) - 1][int(honnan[1]) - 1][1] == "b":
+    elif figura == "b":
         futo(tabla, honnan, hova)
-    elif tabla[int(honnan[0]) - 1][int(honnan[1]) - 1][1] == "k":
+    elif figura == "k":
         kiraly(tabla, honnan, hova)
-    elif tabla[int(honnan[0]) - 1][int(honnan[1]) - 1][1] == "q":
+    elif figura == "q":
         kiralyno(tabla, honnan, hova)
